@@ -3,8 +3,8 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            FLK.HOME
-tagline:          Episodes in Code
+title:            FLK
+tagline:          Why always me?
 url:              http://flk.club
 paginate:         1
 baseurl:          /
