@@ -1,0 +1,23 @@
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            FLK.HOME
+tagline:          Episodes in Code
+url:              http://nkuflk.github.io
+paginate:         1
+baseurl:          /
+author:
+  name:           heyuntao
+  url:            https://www.facebook.com/profile.php?id=100003543193166
+  email:          nkuflk@gmail.com
+pages_list:       
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/nkuflk/nkuflk.github.io
