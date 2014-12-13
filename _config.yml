@@ -5,7 +5,7 @@ relative_permalinks: true
 # Setup
 title:            FLK.HOME
 tagline:          Episodes in Code
-url:              http://nkuflk.github.io
+url:              http://flk.club
 paginate:         1
 baseurl:          /
 author:
