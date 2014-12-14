@@ -46,7 +46,7 @@ find一下：
 可以通过修改gdb源码darwin-nat.c解决此问题：  
 `- #include <machine/setjmp.h>`  
 `+ #include <setjmp.h>`  
-重新编译安装即可成功!
+重新编译安装成功!
 
 当使用gdb进行调试时，OS X不会开放对程序的完全控制，需要制作gdb的签名来获取对调试程序的完全控制权。制作gdb签名的方法可以自行google，照做即可。
 
