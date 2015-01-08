@@ -3,7 +3,7 @@ layout: post
 title: "gdb在Yosemite下源码安装问题"
 description: ""
 category: default
-tags: []
+tags: [mac,c]
 ---
 
 在OS X中安装好Xcode后，发现terminal只有gcc命令，没有gdb。因为Apple采用了基于LLVM的编译器clang来替代gcc和llvm-gcc，用lldb来替代gdb。
