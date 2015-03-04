@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<audio autoplay loop>
-		    <source src="public/You Got Me.mp3" type="audio/mpeg">
+		    <source src="You Got Me.mp3" type="audio/mpeg">
 		</audio>
 		<div id="allmap"></div>
 	</body>
@@ -20,7 +20,7 @@
 	var map = new BMap.Map("allmap");
 	map.centerAndZoom(new BMap.Point(100, 35), 6);
 	map.setMapStyle({style:'midnight'});
-	var myIcon = new BMap.Icon("./public/heart.png", new BMap.Size(30,30));
+	var myIcon = new BMap.Icon("heart.png", new BMap.Size(30,30));
 
 	var place_info = [
 					  [116.417, 39.909, '北京'],
