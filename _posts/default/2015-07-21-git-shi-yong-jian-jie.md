@@ -20,5 +20,6 @@ Linus 不爽没有一个免费的高效分布式代码托管系统，于是一�
 开始管理一个project代码，必须要有一个git仓库  
 ```
 $ git init
-```
-(http://127.0.0.1:4000/image/1.png)
+```  
+生成一个.git目录如下图
+![git dir](https://github.com/nkuflk/nkuflk.github.io/raw/master/image/1.png?raw=true)
