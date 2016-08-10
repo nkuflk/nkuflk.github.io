@@ -2,7 +2,7 @@ require "rubygems"
 require 'rake'
 require 'yaml'
 require 'time'
-require 'hz2py'
+# require 'hz2py'
 
 SOURCE = "."
 CONFIG = {
@@ -46,11 +46,12 @@ desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
+  title = title.downcase.strip.gsub(' ', '-')
   tags = ENV["tags"] || "[]"
   category = ENV["category"] || "default"
   description = ENV["description"] || ""
-  slug = Hz2py.do(title, :join_with => '-', :to_simplified => true)
-  slug = slug.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  #slug = Hz2py.do(title, :join_with => '-', :to_simplified => true)
+  #slug = slug.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
   rescue => e
@@ -61,7 +62,7 @@ task :post do
   if !File.directory?(filename)
 	  mkdir_p filename
   end
-  filename = File.join(filename, "#{date}-#{slug}.#{CONFIG['post_ext']}")
+  filename = File.join(filename, "#{date}-#{title}.#{CONFIG['post_ext']}")
   if File.exist?(filename)
 	  abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end

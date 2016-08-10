@@ -2,7 +2,7 @@
 layout: post
 title: "insert, search, delete, max in O(1) time in same data structure? "
 description: ""
-category: Interview Question
+category: default
 tags: [Amazon,DataStructure]
 ---
 
